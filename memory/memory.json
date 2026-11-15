@@ -1,0 +1,128 @@
+{
+  "runs": [
+    {
+      "time": "2026-11-14 21:26:50",
+      "topic": "Introduction to RAG",
+      "attempts": 2,
+      "shipped": true,
+      "failed_checks": [
+        "ACC2",
+        "LANG1",
+        "LANG2",
+        "LANG3",
+        "JAR1",
+        "EX1",
+        "EX2",
+        "COV1",
+        "COV3",
+        "FLOW1",
+        "STRUCT1"
+      ]
+    },
+    {
+      "time": "2026-11-15 11:47:55",
+      "topic": "Introduction to RAG",
+      "attempts": 2,
+      "shipped": true,
+      "failed_checks": [
+        "JAR1"
+      ]
+    }
+  ],
+  "fail_counts": {
+    "ACC2": 1,
+    "LANG1": 1,
+    "LANG2": 1,
+    "LANG3": 1,
+    "JAR1": 2,
+    "EX1": 1,
+    "EX2": 1,
+    "COV1": 1,
+    "COV3": 1,
+    "FLOW1": 1,
+    "STRUCT1": 1
+  },
+  "recent_reasons": {
+    "ACC2": [
+      "Says or implies the model is retrained/updated, which contradicts fact F8."
+    ],
+    "LANG1": [
+      "Average sentence length is 22.1 words (limit 15)."
+    ],
+    "LANG2": [
+      "Longest sentence has 44 words (limit 25)."
+    ],
+    "LANG3": [
+      "Uses the idiom 'piece of cake'."
+    ],
+    "JAR1": [
+      "Used without explanation: embedding, vector database.",
+      "The technical term 'weights' is used without being explained in plain words."
+    ],
+    "EX1": [
+      "No everyday analogy found."
+    ],
+    "EX2": [
+      "No worked example with and without RAG."
+    ],
+    "COV1": [
+      "Does not explain what RAG is or its full name."
+    ],
+    "COV3": [
+      "Retrieve/augment/generate steps missing or out of order."
+    ],
+    "FLOW1": [
+      "Headings out of order or a technical term is used before the How section."
+    ],
+    "STRUCT1": [
+      "word count is 175 (needs 500-1000); the five headings What/Why/How/Example/Recap are missing or out of order; 'Check yourself' has 0 numbered questions (needs exactly 3)."
+    ]
+  },
+  "rules": {
+    "ACC2": {
+      "rule": "Say clearly that RAG changes what the model reads, never the model itself.",
+      "fails": 1
+    },
+    "LANG1": {
+      "rule": "Use short sentences. Aim for 10 to 14 words each.",
+      "fails": 1
+    },
+    "LANG2": {
+      "rule": "Split any sentence that is longer than 25 words.",
+      "fails": 1
+    },
+    "LANG3": {
+      "rule": "Avoid idioms and slang (for example 'piece of cake', 'under the hood'). Use plain words.",
+      "fails": 1
+    },
+    "JAR1": {
+      "rule": "Define every technical term in plain words the moment it",
+      "fails": 2
+    },
+    "EX1": {
+      "rule": "Add one everyday analogy, such as an open-book exam, and map it to RAG.",
+      "fails": 1
+    },
+    "EX2": {
+      "rule": "Add a worked example: one question, answered without RAG and then with RAG.",
+      "fails": 1
+    },
+    "COV1": {
+      "rule": "Explain the full name word by word.",
+      "fails": 1
+    },
+    "COV3": {
+      "rule": "Show the steps in order: prepare, retrieve, augment, generate.",
+      "fails": 1
+    },
+    "FLOW1": {
+      "rule": "Keep the order What, Why, How, Example, Recap. Do not use a term before it is explained.",
+      "fails": 1
+    },
+    "STRUCT1": {
+      "rule": "Keep to 500-1000 words with the five headings and 3 'Check yourself' questions.",
+      "fails": 1
+    }
+  },
+  "feedback": []
+}

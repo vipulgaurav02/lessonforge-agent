@@ -1,0 +1,177 @@
+{
+  "topic": "Introduction to RAG",
+  "status": "SHIPPED",
+  "injected_error": false,
+  "attempts": [
+    {
+      "n": 1,
+      "passed": false,
+      "changes": "",
+      "results": [
+        {
+          "id": "ACC1",
+          "passed": true,
+          "reason": "All factual claims match the fact sheet and limitations are stated.",
+          "evidence": "It reduces hallucinations, but it does not remove them completely."
+        },
+        {
+          "id": "ACC2",
+          "passed": true,
+          "reason": "The lesson explicitly states RAG leaves the model unchanged without retraining.",
+          "evidence": "RAG changes only what the model reads, never the model itself."
+        },
+        {
+          "id": "LANG1",
+          "passed": true,
+          "reason": "Average sentence length is 10.2 words (limit 15).",
+          "evidence": ""
+        },
+        {
+          "id": "LANG2",
+          "passed": true,
+          "reason": "Longest sentence has 19 words (limit 25).",
+          "evidence": ""
+        },
+        {
+          "id": "LANG3",
+          "passed": true,
+          "reason": "The text uses simple, accessible English without idioms or slang.",
+          "evidence": ""
+        },
+        {
+          "id": "JAR1",
+          "passed": false,
+          "reason": "The technical term 'weights' is used without being explained in plain words.",
+          "evidence": "changes a model's internal weights through more training"
+        },
+        {
+          "id": "EX1",
+          "passed": true,
+          "reason": "An open-book exam analogy clearly maps onto how RAG retrieves and uses text.",
+          "evidence": "An everyday example is an open-book exam in college."
+        },
+        {
+          "id": "EX2",
+          "passed": true,
+          "reason": "Shows a scholarship question answered step-by-step both without and with RAG.",
+          "evidence": "What is the last date to submit the college scholarship form?"
+        },
+        {
+          "id": "COV1",
+          "passed": true,
+          "reason": "Defines RAG and explains each part of its name word by word.",
+          "evidence": "RAG stands for Retrieval-Augmented Generation."
+        },
+        {
+          "id": "COV2",
+          "passed": true,
+          "reason": "Explains cutoff dates, private documents, and hallucinations.",
+          "evidence": "First, an LLM learns facts only up to a fixed training cutoff"
+        },
+        {
+          "id": "COV3",
+          "passed": true,
+          "reason": "Explains prepare, retrieve, augment, and generate in order.",
+          "evidence": "1. Prepare (done once): First, you split large documents"
+        },
+        {
+          "id": "FLOW1",
+          "passed": true,
+          "reason": "Sections run What, Why, How, Example, and Recap without relying on unintroduced concepts.",
+          "evidence": ""
+        },
+        {
+          "id": "STRUCT1",
+          "passed": true,
+          "reason": "Structure is correct.",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "passed": true,
+      "changes": "- Added a plain-language definition of the technical term 'weights' in Section 3 before using it, and included it in the glossary to satisfy JAR1.",
+      "results": [
+        {
+          "id": "ACC1",
+          "passed": true,
+          "reason": "All facts match the fact sheet and limits like potential errors are stated.",
+          "evidence": "it usually reduces hallucinations, but it does not remove them completely."
+        },
+        {
+          "id": "ACC2",
+          "passed": true,
+          "reason": "The text explicitly states RAG never modifies the model itself.",
+          "evidence": "RAG changes only what the model reads, never the model itself."
+        },
+        {
+          "id": "LANG1",
+          "passed": true,
+          "reason": "Average sentence length is 10.3 words (limit 15).",
+          "evidence": ""
+        },
+        {
+          "id": "LANG2",
+          "passed": true,
+          "reason": "Longest sentence has 20 words (limit 25).",
+          "evidence": ""
+        },
+        {
+          "id": "LANG3",
+          "passed": true,
+          "reason": "Vocabulary and sentence structures are simple, clear, and direct.",
+          "evidence": "RAG works just like an open-book exam for a computer program."
+        },
+        {
+          "id": "JAR1",
+          "passed": true,
+          "reason": "Technical terms are defined in simple language upon their first mention.",
+          "evidence": "A large language model (LLM) is an AI program trained on"
+        },
+        {
+          "id": "EX1",
+          "passed": true,
+          "reason": "The open-book exam analogy clearly explains retrieval and generation without computers.",
+          "evidence": "Think about an open-book exam in a college."
+        },
+        {
+          "id": "EX2",
+          "passed": true,
+          "reason": "The lesson demonstrates a realistic scholarship form question with and without RAG.",
+          "evidence": "What is the last date to submit the college scholarship form?"
+        },
+        {
+          "id": "COV1",
+          "passed": true,
+          "reason": "The lesson defines RAG and breaks down each word in the acronym.",
+          "evidence": "RAG stands for Retrieval-Augmented Generation."
+        },
+        {
+          "id": "COV2",
+          "passed": true,
+          "reason": "It addresses cutoff dates, private data, and hallucination.",
+          "evidence": "First, an LLM learns facts only up to a fixed training cutoff"
+        },
+        {
+          "id": "COV3",
+          "passed": true,
+          "reason": "The process is described in the exact sequence: prepare, retrieve, augment, generate.",
+          "evidence": "1. Prepare (done once): First, you split your documents into small"
+        },
+        {
+          "id": "FLOW1",
+          "passed": true,
+          "reason": "Sections strictly follow What, Why, How, Example, and Recap without forward references.",
+          "evidence": "## 1. What is RAG? ## 2. Why do we need"
+        },
+        {
+          "id": "STRUCT1",
+          "passed": true,
+          "reason": "Structure is correct.",
+          "evidence": ""
+        }
+      ]
+    }
+  ]
+}
